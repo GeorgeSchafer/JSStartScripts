@@ -1,22 +1,17 @@
 #!/bin/bash
 
-touch .gitignore 
-echo "/node_modules/" >> .gitignore
-echo ''
+echo "node_modules/" >> .gitignore
 
-git submodule add https://github.com/GeorgeSchafer/EasyAccessor.git lib/ea
-git submodule init
-git submodule update
+# git submodule add https://github.com/jadedrakerider/EasyAccessor.git lib/ea
+# git submodule init
+# git submodule update
+# echo ''
+
+npm i mocha chai --save-dev
 echo ''
 
 npm install
 echo 'npm dependencies installed'
-
-bash sh/gitBranches.sh
-echo ''
-
-npm i mocha chai --save-dev
-echo ''
 
 mkdir test
 cd test
