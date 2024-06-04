@@ -20,6 +20,7 @@ touch test.spec.mjs
 echo ''
 
 cd ..
+git submodule add https://github.com/GeorgeSchafer/kwikgit.git sh
 echo ''
 
 npm init
@@ -27,4 +28,4 @@ echo ''
 
 git add .
 git commit -a -m 'Ran startNPM'
-echo ''
+echo 'finished startNPM'
